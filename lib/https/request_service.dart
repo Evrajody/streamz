@@ -23,6 +23,9 @@ abstract class RequestService extends ChopperService {
   @Get(path: 'popular.html?page=idpage')
   Future<Response> requestRandomPopularResponse(@Path('idpage') int idpage);
 
+  @Get(path: 'new-season.html')
+  Future<Response> requestNewRelease();
+
   @Get(path: 'anime-movies.html')
   Future<Response> requestMoviesResponse();
 

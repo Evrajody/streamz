@@ -80,4 +80,11 @@ class _$RequestService extends RequestService {
     final $request = Request('GET', $url, client.baseUrl);
     return client.send<dynamic, dynamic>($request);
   }
+
+  @override
+  Future<Response> requestNewRelease() {
+    final $url = 'https://gogoanime.wiki/new-season.html';
+    final $request = Request('GET', $url, client.baseUrl);
+    return client.send<dynamic, dynamic>($request);
+  }
 }

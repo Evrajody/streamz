@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -82,8 +81,10 @@ class _WebViewScreenState extends State<WebViewScreen> {
               fit: StackFit.expand,
               children: [
                 SizedBox.fromSize(
-                  size: Size(MediaQuery.of(context).size.width,
-                      MediaQuery.of(context).size.width),
+                  size: Size(
+                    MediaQuery.of(context).size.width,
+                    MediaQuery.of(context).size.width,
+                  ),
                   child: WebView(
                     initialUrl: Get.arguments['mediaUrl'].toString(),
                     javascriptMode: JavascriptMode.unrestricted,

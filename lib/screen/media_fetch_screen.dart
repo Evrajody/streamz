@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:streamz/Https/anime_service.dart';
+import 'package:streamz/https/anime_service.dart';
 import 'package:streamz/tools/streamz_constants.dart';
 import 'package:streamz/tools/streamz_routes.dart';
 import 'package:streamz/tools/webview_manager.dart';

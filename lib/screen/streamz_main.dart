@@ -1,11 +1,10 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:streamz/Https/anime_service.dart';
-import 'package:streamz/Https/request_service.dart';
+import 'package:streamz/https/anime_service.dart';
+import 'package:streamz/https/request_service.dart';
 import 'package:streamz/models/anime_result.dart';
 import 'package:get/get.dart';
 import 'package:streamz/screen/no_internet_screen.dart';
@@ -66,14 +65,6 @@ class _StreamzMainState extends State<StreamzMain> {
                               children: [
                                 Row(
                                   children: [
-                                    Text(
-                                      "Animations",
-                                      style: GoogleFonts.poppins(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 20,
-                                      ),
-                                    ),
                                     const SizedBox(width: 5),
                                     Text(
                                       "Populaires",

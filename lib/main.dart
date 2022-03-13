@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
-import 'package:streamz/Https/request_service.dart';
+import 'package:streamz/https/request_service.dart';
 import 'package:streamz/bindings/managers_binding.dart';
 import 'package:streamz/tools/streamz_routes_match.dart';
 

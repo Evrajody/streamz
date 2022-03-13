@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:streamz/screen/streams_download.dart';
 import 'package:streamz/screen/streamz_main.dart';
@@ -23,7 +22,7 @@ class _StreamzHomeState extends State<StreamzHome> {
         index: selectedIndex,
         children: const <Widget>[
           StreamzMain(),
-          StreamzSearch(),                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+          StreamzSearch(),
           StreamzDownload(),
           StreamzUserProfile(),
         ],

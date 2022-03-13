@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:streamz/Https/anime_service.dart';
+import 'package:streamz/https/anime_service.dart';
 import 'package:streamz/models/anime.dart';
 import 'package:streamz/screen/cache_image_with_cachemanager.dart';
 import 'package:streamz/tools/streamz_constants.dart';

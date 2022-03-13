@@ -109,10 +109,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        key: _formKey,
-        backgroundColor: Colors.black,
-        body: BetterPlayer(
-          controller: _controller,
-        ));
+      key: _formKey,
+      backgroundColor: Colors.black,
+      body: BetterPlayer(
+        controller: _controller,
+      ),
+    );
   }
 }

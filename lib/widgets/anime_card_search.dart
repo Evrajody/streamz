@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:streamz/models/anime.dart';
 import 'package:streamz/screen/anime_page_view.dart';
 
-class AnimeCard extends StatelessWidget {
+class AnimeCardSearch extends StatelessWidget {
   final Anime anime;
   final double animeCardWidth;
   final double animeCardHeight;
 
-  const AnimeCard({
+  const AnimeCardSearch({
     required this.anime,
-    required this.animeCardHeight,
-    required this.animeCardWidth,
+    this.animeCardHeight = 150,
+    this.animeCardWidth = 200,
     Key? key,
   }) : super(key: key);
 
@@ -32,9 +31,7 @@ class AnimeCard extends StatelessWidget {
                   Get.to(() => const AnimePageView(), arguments: {
                     'anime': anime,
                   });
-                } else {
-            
-                }
+                } else {}
               },
               child: Material(
                 color: Colors.white,
@@ -52,41 +49,6 @@ class AnimeCard extends StatelessWidget {
                   width: animeCardWidth,
                 ),
               ),
-            ),
-          ),
-        ),
-        const SizedBox(height: 5),
-        Expanded(
-          child: SizedBox(
-            width: animeCardWidth,
-            child: Center(
-              child: Text(
-                anime.name.toString(),
-                overflow: TextOverflow.ellipsis,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-        ),
-        Expanded(
-          child: SizedBox(
-            width: animeCardWidth,
-            child: Center(
-              child: anime.currentEp != null
-                  ? Text(
-                      anime.currentEp.toString(),
-                      overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.poppins(
-                        fontSize: 12,
-                        color: Colors.white,
-                      ),
-                    )
-                  : const Text(""),
             ),
           ),
         ),
